@@ -1,1 +1,16 @@
-Test.
+"Cuba Libre" pagatavošana:
+1. Paņemt glāzi
+2. Ielikt 5 ledus gabalus
+3. Pievienot citrona šķēli
+4. Ieliet 320 ml Coca-colas
+5. Papildināt ar 80 ml Bacardi Black Rum
+6. Pasniegt klientam
+
+
+LMT iekārtu savienošana:
+1. Ievietojiet HDMI kabeļa vienu galu Viedtelevīzijas iekārtā un otru – televizora HDMI ligzdā
+2. Savienojiet LMT 4G rūteri un Viedtelevīzijas iekārtu ar tīkla vadu
+3. Viedtelevīzijas iekārtu pievienojiet strāvai
+4. Ievietojiet Viedtelevīzijas pultī divas AAA baterijas
+5. Ieslēdziet televizoru
+6. Televizora pultī atrodiet pogu "Automātiskā iestatīšana" un nospiediet to
