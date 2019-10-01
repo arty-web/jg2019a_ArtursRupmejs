@@ -14,3 +14,6 @@ LMT iekārtu savienošana:
 4. Ievietojiet Viedtelevīzijas pultī divas AAA baterijas
 5. Ieslēdziet televizoru
 6. Televizora pultī atrodiet pogu "Automātiskā iestatīšana" un nospiediet to
+
+
+//Ok
