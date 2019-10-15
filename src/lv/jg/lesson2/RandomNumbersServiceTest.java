@@ -3,6 +3,7 @@ package lv.jg.lesson2;
 import static java.lang.System.out;
 import java.util.Random;
 
+//Ok
 public class RandomNumbersServiceTest {
 
     public static void main(String[] args) {
