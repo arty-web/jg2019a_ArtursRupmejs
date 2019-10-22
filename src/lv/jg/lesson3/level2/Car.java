@@ -1,5 +1,6 @@
 package lv.jg.lesson3.level2;
 
+//Ok
 class Car {
 
     private String color;

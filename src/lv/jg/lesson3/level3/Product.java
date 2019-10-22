@@ -15,6 +15,9 @@ class Product {
         this.discount = discount;
     }
     public double calculateActualPrice() {
+        //šeit labāk šo aprēķinu neiznest atsevišķā mainīgajā,
+        //bet uzreiz rakstīt "return regularPrice - (regularPrice * discount)"
+        //jo metodes nosaukums jau pasaka priekšā, kas tur tiek darīts
         double actualPrice = regularPrice - (regularPrice * discount);
         return actualPrice;
     }

@@ -1,5 +1,6 @@
 package lv.jg.lesson3.level1;
 
+//OK
 public class CircleTest {
 
     public static void main(String[] args) {

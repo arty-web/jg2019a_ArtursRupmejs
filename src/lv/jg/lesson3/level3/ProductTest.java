@@ -1,5 +1,6 @@
 package lv.jg.lesson3.level3;
 
+//Ok
 public class ProductTest {
 
     public static void main(String[] args) {
