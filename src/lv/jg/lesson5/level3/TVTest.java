@@ -1,5 +1,6 @@
 package lv.jg.lesson5.level3;
 
+//ok
 public class TVTest {
 
     public static void main(String[] args) {

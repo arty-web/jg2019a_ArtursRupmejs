@@ -27,9 +27,13 @@ public class Book {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Book book = (Book) o;
+        //trūkst salīdzināšanas ar title
+        //sobrīd sanāk, jebkuras divas grāmatas no viena autora ir vienādas
         return Objects.equals(author, book.author);
     }
 
+    //šai metodei irjābūt testa klasē
+    //objektā šāda funkcionlitāte nav nepieciešama
     public void compareViaEquals(Book book1, Book book2) {
 
         System.out.println(book1);
@@ -49,6 +53,8 @@ public class Book {
 
     }
 
+    //šai metodei irjābūt testa klasē
+    //objektā šāda funkcionlitāte nav nepieciešama
     private void compareViaEqualSigns(Book book1, Book book2) {
 
         System.out.print("***'  ==  ' comparison outcome >>> ");

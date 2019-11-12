@@ -25,7 +25,7 @@ public class TV {
 
     public void nextChannel() {
         out.println("Action: User pressed the 'Next channel' button.");
-        if (turnedOn == true) {
+        if (turnedOn == true) {//salidzināšana nav nepieciešama "if (turnedOn) {"
             currentChannel++;
             out.println("Result: Current channel is now '" + currentChannel + "'.");
         } else {
@@ -36,7 +36,7 @@ public class TV {
 
     public void previousChannel() {
         out.println("Action: User pressed the 'Previos channel' button.");
-        if (turnedOn == true) {
+        if (turnedOn == true) {//salidzināšana nav nepieciešama "if (turnedOn) {"
             currentChannel--;
             out.println("Result: Current channel is now '" + currentChannel + "'.");
         } else {
@@ -47,7 +47,7 @@ public class TV {
 
     public void increaseVolume() {
         out.println("Action: User pressed the 'Increase volume' button.");
-        if (turnedOn == true) {
+        if (turnedOn == true) {//salidzināšana nav nepieciešama "if (turnedOn) {"
             currentVolumeLevel++;
             out.println("Result: Current volume is now '" + currentVolumeLevel + "'.");
         } else {
@@ -58,7 +58,7 @@ public class TV {
 
     public void decreaseVolume() {
         out.println("Action: User pressed the 'Decrease volume' button.");
-        if (turnedOn == true) {
+        if (turnedOn == true) {//salidzināšana nav nepieciešama "if (turnedOn) {"
             currentVolumeLevel--;
             out.println("Result: Current volume is now '" + currentVolumeLevel + "'.");
         } else {
@@ -68,8 +68,12 @@ public class TV {
     }
 
     public void turnOn(TV tv) {
+        //šeit pietiek tik ar stāvokļa iestatīšanu, jo nekas cits nemainās un pārbade nav
+        //turnedOn = true;
+        //out.println("Result: TV turned off.");
+
         out.println("Action: User pressed the 'Turn on' button.");
-        if (turnedOn == false) {
+        if (turnedOn == false) {//salidzināšana nav nepieciešama "if (!turnedOn) {"
             turnedOn = true;
             out.println("Result: TV turned on. ");
             System.out.println(tv);
@@ -80,6 +84,10 @@ public class TV {
     }
 
     public void turnOff() {
+        //šeit pietiek tik ar stāvokļa iestatīšanu, jo nekas cits nemainās un pārbade nav
+        //turnedOn = false;
+        //out.println("Result: TV turned off.");
+
         out.println("Action: User pressed the 'Turn off' button.");
         if (turnedOn == true) {
             turnedOn = false;

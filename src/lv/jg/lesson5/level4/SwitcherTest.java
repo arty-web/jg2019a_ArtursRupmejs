@@ -9,7 +9,7 @@ public class SwitcherTest {
 
         lightSwitch.connect(philips);
 
-        for (int a = 1; a != 13; a++) {
+        for (int a = 1; a != 13; a++) {  //labāk counteri saukt par "i" for ciklā
             lightSwitch.switchOnOff();
         }
     }

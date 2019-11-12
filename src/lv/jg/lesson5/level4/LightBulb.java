@@ -5,8 +5,8 @@ import static java.lang.System.out;
 public class LightBulb {
 
     private boolean turnedOn;
-    private int currentTurnOnCount;
-    private int maxTurnOnCount = 5;
+    private int currentTurnOnCount; //
+    private int maxTurnOnCount = 5;  //šim  ir jābūt konstantei
 
     public void turnOn() {
         if (currentTurnOnCount != maxTurnOnCount) {
