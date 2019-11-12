@@ -14,12 +14,14 @@ public class Stock {
 		min = currentValue;
 	}
 
+//	slikts metode nosaukums, get liecien par to, ka tiks atgriezts rezultāts
 	private void getMax() {
 		if (currentValue > max) {
 			max = currentValue;
 		}
 	}
 
+	//	slikts metode nosaukums, get liecien par to, ka tiks atgriezts rezultāts
 	private void getMin() {
 		if (currentValue < min) {
 			min = currentValue;

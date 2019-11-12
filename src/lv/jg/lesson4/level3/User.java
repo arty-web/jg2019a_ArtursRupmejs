@@ -4,6 +4,7 @@ public class User {
 
 	private String username, password;
 	private int loginAttemptsLeft = 3;
+	//boolean tipa mainīgais sāksies ar "has" vai "is"
 	private boolean blocked;
 
 	public User(String username) {
@@ -28,9 +29,11 @@ public class User {
 	}
 
 	public void reduceLoginAttemptsLeft() {
+		//šeit labāk lietot "loginAttemptsLeft--"
 		loginAttemptsLeft = loginAttemptsLeft - 1;
 	}
 
+	//nosaukumu "isBlocked" vai "hasBlocked" bus labaki, jo priekšā saka ka atgriez boolean
 	public boolean checkBlocked() {
 		return blocked;
 	}
@@ -39,6 +42,7 @@ public class User {
 		this.password = password;
 	}
 
+	//šai metodei butu jaūt UserLoginService klasē
 	public boolean authorisation() {
 		if (username.equals("arty") && password.equals("123")
 				|| username.equals("hugo") && password.equals("777"))

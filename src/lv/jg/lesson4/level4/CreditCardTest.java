@@ -1,5 +1,6 @@
 package lv.jg.lesson4.level4;
 
+//Ok
 public class CreditCardTest {
 	
 	public static void main(String[] args) {

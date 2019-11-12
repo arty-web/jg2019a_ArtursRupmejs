@@ -2,6 +2,8 @@ package lv.jg.lesson4.level1;
 
 import java.util.Random;
 
+//Ik reizi palaižot testu ir jārāda viens un tas pats rezultāts
+//citādi nav iespejams pārliecināties par koda pareizumu
 public class LightColorDetectorTest {
 	
 	public static void main(String[] args) {

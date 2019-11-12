@@ -1,5 +1,6 @@
 package lv.jg.lesson4.level1;
 
+//Ok
 public class LightColorDetector {
 
 	public void detect(int wavelength) {
