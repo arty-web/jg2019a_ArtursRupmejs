@@ -14,9 +14,12 @@ public class Car {
         this.maxSpeed = maxSpeed;
     }
 
+    //metodei accelaret ir jāsatur loģika tikai attiecībā uz to uzdevumu, kuru tā pilda
+    //maksimums teksta izvadi par stāvokla maiņu
+    //aprakstiemir jābūt ārus šīs klases
     public void accelerate(int targetSpeed) {
         out.println("The driver wants to accelerate to " + targetSpeed + " km/h. He pushes the gas pedal...");
-        if (canAccelerate() == true) {
+        if (canAccelerate() == true) { //if (canAccelerate()) {
             if (currentSpeed < 0) {
                 out.print("...(after switching the gear to 'D') and starts driving forward again! ");
             }
@@ -32,6 +35,7 @@ public class Car {
         out.println("\n");
     }
 
+    //skatīt ieprikšējos komentārus
     public void slowDown(int targetSpeed) {
         out.println("The driver wants to slow down to " + targetSpeed + " km/h. He pushes the brake pedal...");
         if (isDriving() == true) {
@@ -49,6 +53,7 @@ public class Car {
         out.println("\n");
     }
 
+    //skatīt ieprikšējos komentārus
     public void speedUp() {
         out.println("The driver wants to test the limits of the car. He puts the pedal to the metal...");
         if (canAccelerate() == true) {
@@ -66,6 +71,7 @@ public class Car {
     }
 
     public boolean isDriving() {
+//        return currentSpeed == 0  //šādi būs īsāk
         if (currentSpeed == 0) {
             return false;
         } else {
@@ -74,6 +80,7 @@ public class Car {
     }
 
     public boolean canAccelerate() {
+//        return currentSpeed <= maxSpeed  //šādi būs īsāk
         if (currentSpeed == maxSpeed) {
             return false;
         } else {
