@@ -3,6 +3,8 @@ package lv.jg.lesson4.level3;
 import java.util.Scanner;
 import static java.lang.System.out;
 
+//šai klasei bija jabūt metodēm login, verify
+//Servisa klases veidošana un palaišana, tad butu tieši no "main"
 public class UserLoginService {
 
 	public static void main(String[] args) {
@@ -18,7 +20,7 @@ public class UserLoginService {
 			String username = keyboard.nextLine();
 
 			if (username.equals(user1.getUsername())) {
-				if (user1.checkBlocked() == false) {
+				if (user1.checkBlocked() == false) { //salīdzināšana nav nepieciešama
 					out.print("Password: ");
 					String password = keyboard.nextLine();
 					login(password, user1);
@@ -26,7 +28,7 @@ public class UserLoginService {
 					user1.block();
 				}
 			} else if (username.equals(user2.getUsername())) {
-				if (user2.checkBlocked() == false) {
+				if (user2.checkBlocked() == false) {//salīdzināšana nav nepieciešama
 					out.print("Password: ");
 					String password = keyboard.nextLine();
 					login(password, user2);

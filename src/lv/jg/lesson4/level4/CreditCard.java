@@ -13,6 +13,7 @@ public class CreditCard {
 			out.println("Current financial positions:");
 			balanceOverview();
 			out.printf("%s%.2f%s\n","***Requested transaction: +$", amount, "***");
+			//šo labāk iznest atsevišķā metodē
 			if (overdraftBalance > 0) {
 				overdraftBalance = overdraftBalance - amount;
 				if (overdraftBalance < 0) {
@@ -22,16 +23,18 @@ public class CreditCard {
 			} else {
 				debitBalance = debitBalance + amount;
 			}
+			//šo labāk iznest atsevišķā metodē
 			out.println("***Transaction was successful!***");
 			out.println("New financial positions:");
 			balanceOverview();
 			insertLine();
-			return true;
+			return true; //šai metodei nav jēgas atdot boolean, jo metode jau izvada statusu kosolē
 		} else {
+			//šo labāk iznest atsevišķā metodē
 			out.printf("%s%.2f%s\n","***Requested transaction: +$", amount, "***");
 			out.println("***PIN code was incorrect. Transaction failed!***");
 			insertLine();
-			return false;
+			return false; //šai metodei nav jēgas atdot boolean, jo metode jau izvada statusu kosolē
 		}
 	}
 	
@@ -41,12 +44,15 @@ public class CreditCard {
 			out.println("Current financial positions:");
 			balanceOverview();
 			out.printf("%s%.2f%s\n","***Requested transaction: -$", amount, "***");
+			//šo labāk iznest atsevišķā metodē
 			double availableBalance = debitBalance + (overdraftLimit - overdraftBalance);
+			//šo labāk iznest atsevišķā metodē
 			if (availableBalance > amount) {
 				debitBalance = debitBalance - amount;
 				if (debitBalance < 0) {
 					overdraftBalance = overdraftBalance - debitBalance;
 					debitBalance = 0;
+					//šo labāk iznest atsevišķā metodē
 					out.println("***Transaction was successful!***");
 					out.println("New financial positions:");
 					balanceOverview();
@@ -57,6 +63,7 @@ public class CreditCard {
 			insertLine();
 			return true;
 		} else {
+			//šo labāk iznest atsevišķā metodē
 			out.printf("%s%.2f%s\n","***Requested transaction: -$", amount, "***");
 			out.println("***PIN code was incorrect. Transaction failed!***");
 			insertLine();
@@ -76,6 +83,9 @@ public class CreditCard {
 		out.printf("%s%.2f\n", " // Overdraft limit: $", overdraftLimit);
 	}
 
+	//šis nav pareiz risinājums, jo sanāk, ka visi karšu objekti zin par pārējo obketu pinkodu
+	//pareizi būtu izveido konstruktoru, kur definē pinkodu
+	//un tad to var salīdzināt ar iedoto
 	private boolean verifyPinCode() {
 		if ((cardNumber.equals("1111 2222 3333 4444") && pinCode.equals("1001"))
 				|| (cardNumber.equals("5555 6666 7777 8888") && pinCode.equals("9876"))

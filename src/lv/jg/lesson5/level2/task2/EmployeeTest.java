@@ -1,5 +1,6 @@
 package lv.jg.lesson5.level2.task2;
 
+//nepieciešams demonstrēt arī "equals darbību"
 public class EmployeeTest {
 
     public static void main(String[] args) {

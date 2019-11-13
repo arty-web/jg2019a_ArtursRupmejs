@@ -1,5 +1,6 @@
 package lv.jg.lesson5.level1;
 
+//no Book klass jāpārnes divas metodes
 public class BookTest {
 
     public static void main(String[] args) {

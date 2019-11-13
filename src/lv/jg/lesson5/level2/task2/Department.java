@@ -1,5 +1,7 @@
 package lv.jg.lesson5.level2.task2;
 
+//trūkst equals
+//lietojam "ctrl + alt + l"
 public class Department {
 
     private String name;

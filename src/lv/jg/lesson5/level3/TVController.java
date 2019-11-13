@@ -2,6 +2,7 @@ package lv.jg.lesson5.level3;
 
 public class TVController {
 
+    //jābūt iekapsulētam - private
     TV television;
 
     public void connect(TV television) {
