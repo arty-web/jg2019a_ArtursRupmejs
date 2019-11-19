@@ -11,7 +11,7 @@ public class ArrayService {
     public void fillArrayWithRandomNumbers(int[] array) {
         Random randomGenerator = new Random();
         for (int i = 0; i < array.length; i++) {
-            array[i] = randomGenerator.nextInt(101);
+            array[i] = randomGenerator.nextInt(101); //101 vajag iznest kā konstatnti
         }
     }
 
@@ -24,11 +24,13 @@ public class ArrayService {
         System.out.println();
     }
 
+    //šai metodei būtu jāatgriež skaitlis - summa
     public void sumInArray(int[] array) {
         int arraySum = 0;
         for (int numberInArray : array) {
             arraySum += numberInArray;
         }
+        //šai izvadei jabūt test klasē
         System.out.println("Sum of all numbers in the array: " + arraySum + ".\n");
     }
 

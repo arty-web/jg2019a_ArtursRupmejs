@@ -2,6 +2,7 @@ package lv.jg.lesson7.level2;
 
 import java.util.*;
 
+//Ok
 public class ArrayService {
 
     public int[] create(int size) {
@@ -11,7 +12,7 @@ public class ArrayService {
     public void fillArrayWithRandomNumbers(int[] array) {
         Random randomGenerator = new Random();
         for (int i = 0; i < array.length; i++) {
-            array[i] = randomGenerator.nextInt(101);
+            array[i] = randomGenerator.nextInt(101); //"101" jāiznes konstantē
         }
     }
 
@@ -23,7 +24,8 @@ public class ArrayService {
         boolean sorted = true;
         int j = 0;
         int tmp;
-        while (sorted) {
+        //man izskatās, ka mainīgā patiesā nozīme ir "isUnsorted"
+        while (sorted) {//izmantojam nosukumā "is" vai "has"
             sorted = false;
             j++;
             for (int i = 0; i < array.length - j; i++) {

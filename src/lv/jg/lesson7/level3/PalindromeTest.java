@@ -1,5 +1,6 @@
 package lv.jg.lesson7.level3;
 
+//OK
 public class PalindromeTest {
 
     public static void main(String args[]) {

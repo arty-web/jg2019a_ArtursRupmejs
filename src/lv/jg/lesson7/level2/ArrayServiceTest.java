@@ -1,5 +1,6 @@
 package lv.jg.lesson7.level2;
 
+//Ok
 public class ArrayServiceTest {
 
     public static void main(String[] args) {
