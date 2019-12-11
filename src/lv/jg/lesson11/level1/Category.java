@@ -1,0 +1,11 @@
+public enum Category {
+
+	VEGETABLES,
+	FRUITS,
+	CANNED_FOOD,
+	BREAKFAST_CEREALS,
+	SWEETS,
+	SOFT_DRINKS,
+	ALCOHOL
+	
+}
